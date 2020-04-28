@@ -75,7 +75,7 @@ res.redirect('/')
 } )
 
 // Update Book Route
-router.put('/', async (req, res) => {
+router.put('/:id', async (req, res) => {
   let book
   try {
    book = await Book.findById(req.params.id)
